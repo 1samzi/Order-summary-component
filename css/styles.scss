@@ -1,0 +1,169 @@
+// # Front-end Style Guide
+
+// ## Layout
+
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+
+// ### Primary
+
+// - Pale blue: hsl(225, 100%, 94%)
+// - Bright blue: hsl(245, 75%, 52%)
+
+// ### Neutral
+
+// - Very pale blue: hsl(225, 100%, 98%)
+// - Desaturated blue: hsl(224, 23%, 55%)
+// - Dark blue: hsl(223, 47%, 23%)
+
+// ## Typography
+
+// ### Body Copy
+
+// - Font size (paragraph): 16px
+
+// ### Font
+
+// - Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+// - Weights: 500, 700, 900
+
+
+$font-stack: 'Red Hat Display', sans-serif;
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+$vpale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+*{
+    font-family: $font-stack;
+    
+}
+
+body{
+    background-color: $pale-blue;
+}
+
+h1{
+    color: $dark-blue;
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 6% 5% 4%;
+    
+}
+h2{
+    color: $dark-blue;
+    font-weight: 900;
+    font-size: 1rem;
+    display: inline-block;
+    width: auto;
+}
+p{
+    display: inline-block;
+    color: $desaturated-blue;
+    width: 75%;
+    margin-bottom: 5%;
+}
+
+.background-img{
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+// Main section 
+.container{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    top: 5em;
+    margin-bottom: 200px;
+    text-align: center;
+    width: 400px;
+    padding: 0;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-img{
+    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.symbol-img{
+    margin-right: 1rem;
+    float: left;
+}
+.text-section{
+    background-color: white;
+}
+
+
+// Plan section
+.plan-section{
+    display: inline-block;
+    width: 75%;
+    text-align: left;
+    height: auto;
+}
+.plan-section p{
+    display: inline-block;
+    width: auto;
+}
+.change-plan{
+    text-decoration: underline;
+    color:$dark-blue;
+    position: absolute;
+    font-weight: 700;
+    top: 25%;
+}
+.change-plan:hover{
+    cursor: pointer;
+    color: #766cf1;
+    text-decoration: none;  
+}
+
+// Buttons
+.payment-button{
+   margin: 5% 0 1%;
+   background-color: $bright-blue;
+   color: white;
+   width: 75%;
+   padding: 2% 0;
+   
+}
+
+.payment-button:hover{
+    background-color: #766cf1;
+    color: white;
+    
+    
+}
+
+.cancel-button{
+    margin: 2% 0 2%;
+    color: $desaturated-blue;
+    font-weight: 700;
+    outline: none;
+}
+.cancel-button:hover{
+    color: $dark-blue;
+}
+
+
+@media (max-width:390px){
+    
+    // Main section 
+    .container{
+        position: relative;
+        top: 5em;
+        margin-bottom: 200px;
+        text-align: center;
+        width: 90%;
+        padding: 0;   
+    }
+
+}
